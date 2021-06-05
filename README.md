@@ -43,4 +43,4 @@ LOGIN : http://127.0.0.1:8000/api/user/login/ (postman testing use Body formdata
 
 LOGOUT : http://127.0.0.1:8000/api/user/logout/ID (id is generated and returned in json while signup plese use at ID )(postman testing use Body formdata add email & password as key value pairs)
 
-Used Token Authentication for user Token generates automatically
+Used Token Authentication for user login Token generates automatically

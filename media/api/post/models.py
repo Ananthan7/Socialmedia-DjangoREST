@@ -3,9 +3,7 @@ from django.db import models
 # Create your models here.
 class Post(models.Model):
     description = models.CharField(max_length=50)
-    images = models.ImageField(upload_to='images/', default=list, blank=True, null=True)
-    images = models.ImageField(upload_to='images/', default=list, blank=True, null=True)
-    images = models.ImageField(upload_to='images/', default=list, blank=True, null=True)
+    images = models.ImageField(max_length=None, upload_to='images/', default=list, blank=True, null=True)
     tags = models.CharField(max_length=50, blank=True, null=True)
     likes = models.IntegerField(blank=True, null=True, default=0)
     dislikes = models.IntegerField(blank=True, null=True, default=0)

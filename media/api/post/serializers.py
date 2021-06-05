@@ -5,8 +5,6 @@ from .models import Post, Tag, TagMap , UserLikedTags, UserDisLikedTags
 class PostSerializer(serializers.HyperlinkedModelSerializer):
     
     image = serializers.ImageField(max_length=None, default=list, allow_empty_file=False, required=False)   
-    image1 = serializers.ImageField(max_length=None, default=list, allow_empty_file=False, required=False)   
-    image2 = serializers.ImageField(max_length=None, default=list, allow_empty_file=False, required=False)   
     class Meta:
         model = Post
         fields = ('id', 'description', 'image', 'image1', 'image2','tags', 'likes', 'dislikes', 'created_at')

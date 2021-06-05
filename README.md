@@ -7,7 +7,7 @@ that have been added by the admin and users are allowed to either like or dislik
 ## Getting Started with project
 PipEnv is a way to create virtual environments in Python that allows for environment agnostic dependency installation.
 
-git clone 
+git clone https://github.com/Ananthan7/Socialmedia-DjangoREST.git
 
 python3 -m pip3 install pipenv
 
@@ -32,7 +32,7 @@ PASSWORD: admin1234
 
 GET social media post added by only admin at : http://127.0.0.1:8000/api/post/
 
-User signup : http://127.0.0.1:8000/api/user/ (postman testing use json format below & method=post)
+User signup : http://127.0.0.1:8000/api/user/ (postman testing use json format below & method=post) Example:
 {
     "email": "name@dev.com",
     "password": "12345",
